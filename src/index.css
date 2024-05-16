@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    background-color: rgb(148, 163, 184, 1);
+    font-family: 'Optimistic Display', '-apple-system', 'ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+.container {
+    @apply mx-auto max-w-full;
+    /* Centra il container e imposta la larghezza massima alla larghezza totale della pagina */
+}
+
+@media (min-width: 640px) {
+
+    /* Breakpoint per schermi piccoli (es. tablet) */
+    .container {
+        @apply max-w-screen-sm;
+        /* Larghezza massima dello schermo per schermi piccoli */
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Breakpoint per schermi medi (es. laptop) */
+    .container {
+        @apply max-w-screen-md;
+        /* Larghezza massima dello schermo per schermi medi */
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Breakpoint per schermi grandi (es. desktop) */
+    .container {
+        @apply max-w-screen-lg;
+        /* Larghezza massima dello schermo per schermi grandi */
+    }
+}
